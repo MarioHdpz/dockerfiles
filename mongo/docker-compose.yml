@@ -1,0 +1,10 @@
+version: '2'
+services:
+  mongo:
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: user
+      MONGO_INITDB_ROOT_PASSWORD: password
